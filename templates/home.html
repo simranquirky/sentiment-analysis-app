@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="glassmorphic-box">
+        <div class="container">
+            <div id="brandname">
+                <h2 align="center">Twitter Sentiment Analysis</h2>
+            </div>
+            <hr/>
+            <br/>
+        <h2 align="center">Sentiment Analysis by Star_techies</h2>
+        </div>
+
+    <div class="ml-container" align="center">
+        
+       
+			<img src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_960_720.png" alt="Twitter Logo" class="logo">
+            <form action="{{ url_for('predict')}}" method="POST">
+                <p>Enter Your Message Here</p>
+                <input type="text" name="message" class="input-box" style="width: 50%;" placeholder="Type your message here">
+                <br/>
+                <br/>
+                <input type="submit" class="btn-info" value="Predict">
+            </form>
+            <div class="emojis">
+                <span class="emoji">&#128515;</span>
+                <span class="emoji">&#128525;</span>
+                <span class="emoji">&#128512;</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

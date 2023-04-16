@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+
+	<div class="glassmorphic-box">
+        <div class="container">
+            <div id="brandname">
+                <h3 align="center">Sentiment Analysis Result</h3>
+            </div>
+            <hr/>
+            <br/>
+        </div>
+
+    <p class="sentiment-heading" align="center">Sentiment</p>
+    <div class="results" align="center">
+
+        {% if prediction == 1%}
+        <h2 class="sentiment-result" style="color:red;">Negative</h2>
+        {% elif prediction == 0%}
+        <h2 class="sentiment-result" style="color:blue;">Positive</h2>
+        {% endif %}
+
+        <a href="..">
+            <input type="submit" value="Go Back" class="btn-back">
+        </a>
+    </div>
+	</div>
+
+</body>
+</html>
